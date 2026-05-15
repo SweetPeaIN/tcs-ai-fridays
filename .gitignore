@@ -1,0 +1,102 @@
+# ==========================================
+# 1. PYTHON & VIRTUAL ENVIRONMENTS
+# ==========================================
+# Virtual environments created by uv, venv, or virtualenv
+.venv/
+venv/
+env/
+ENV/
+
+# Python caching and byte-code
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution, packaging, and build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# 2. UV PROJECT MANAGER SPECIFICS
+# ==========================================
+# NOTE: Do NOT ignore 'uv.lock' or 'pyproject.toml'.
+# They must be committed so your teammate gets identical versions.
+
+# Ignore uv's internal cache folder
+.uv/
+
+# ==========================================
+# 3. AI / LLM / DATA SCIENCE / VECTOR DBs
+# ==========================================
+# Environment variables containing sensitive API keys (OpenAI, Anthropic, LangChain, etc.)
+.env
+.env.*
+!.env.example
+
+# Large Language Model files, weights, and checkpoints
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.safetensors
+models/
+weights/
+
+# Vector Databases and Local Databases (Chroma, FAISS, LanceDB, SQLite)
+# Storing these locally will bloat git and cause merge conflicts.
+.chroma/
+chroma_db/
+faiss_index/
+*.idx
+*.pkl
+*.pickle
+*.db
+*.sqlite3
+
+# LangChain / LangGraph / LlamaIndex tracing and caching logs
+.langchain/
+.langgraph/
+.llm_cache/
+*.log
+llm_logs/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# 4. OPERATING SYSTEM & IDEs
+# ==========================================
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code settings and workspace configurations
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# PyCharm / IntelliJ settings
+.idea/
